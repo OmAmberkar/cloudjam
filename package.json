@@ -6,9 +6,12 @@
     "start:backend": "cd backend && npx ts-node index.ts",
     "start:frontend": "cd frontend && npm run dev",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "build:frontend": "cd frontend && npm run build"
+    "build:frontend": "cd frontend && npm run build",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "wrangler": "^4.80.0"
   }
 }
